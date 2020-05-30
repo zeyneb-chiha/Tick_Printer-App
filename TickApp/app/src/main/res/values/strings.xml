@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TickP</string>
+    <string name="button">Button</string>
+    <string name="todo1">TODO</string>
+    <string name="se_connecter">Se Connecter</string>
+    <string name="créer">créer</string>
+    <string name="nom">NOM</string>
+    <string name="prenom">PRENOM</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mot_de_passe">Mot De Passe</string>
+    <string name="cr_er_compte">créer Compte</string>
+    <string name="créer_compte">Créer Compte</string>
+    <string name="connceter">Connceter</string>
+    <string name="connecter">connecter</string>
+    <string name="hopital_ibn_eljazar_kairouan">HOPITAL IBN ELJAZAR KAIROUAN</string>
+    <string name="textview">TextView</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">todos</string>
+    <string name="type_d_analyse">TYPE D\'ANALYSE</string>
+    <string name="numero">NUMERO</string>
+    <string name="service">SERVICE</string>
+    <string name="matricule">MATRICULE</string>
+    <string name="nom_prenom">NOM-PRENOM</string>
+    <string name="nouveau_patient">NOUVEAU PATIENT</string>
+    <string name="imprimer">IMPRIMER</string>
+    <string name="déconnecter">déconnecter</string>
+    <string name="printer_name">Printer Name</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Main5Activity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="111dp"
+        android:layout_height="108dp" />
+
+
+    <EditText
+        android:id="@+id/box"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        android:layout_above="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-79dp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/box"
+        android:layout_marginBottom="-174dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/imprimer"
+        android:textColor="#00A695"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-165dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/connecter"
+            android:textColor="#00A695"
+            android:layout_above="@+id/button6"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button7"
+        android:layout_marginBottom="-190dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/déconnecter"
+        android:textColor="#00A695"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
