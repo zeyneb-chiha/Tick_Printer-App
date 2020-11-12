@@ -26,4 +26,5 @@
     <string name="imprimer">IMPRIMER</string>
     <string name="déconnecter">déconnecter</string>
     <string name="printer_name">Printer Name</string>
+    <string name="Ajouter">Ajouter</string>
 </resources>

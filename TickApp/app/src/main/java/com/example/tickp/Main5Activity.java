@@ -34,10 +34,10 @@ public class Main5Activity extends AppCompatActivity {
     int ReadBufferPosition;
     volatile boolean StopWorker;
     Button btnPrint;
-    EditText textBox;
-    EditText btnPrinterName;
+    EditText name,prename,serv,analy,mat;
     Button btnconnect;
     Button btnDisconnect;
+    Button btnAjouter;
 
 
     @Override
@@ -51,8 +51,17 @@ public class Main5Activity extends AppCompatActivity {
             btnPrint = findViewById(R.id.button6);
             btnconnect = findViewById(R.id.button7);
             btnDisconnect = findViewById(R.id.button8);
-            btnPrinterName = findViewById(R.id.text);
-            textBox = findViewById(R.id.box);
+            btnAjouter = findViewById(R.id.button9);
+            name=findViewById(R.id.name);
+            prename=findViewById(R.id.prename);
+            serv=findViewById(R.id.serv);
+            analy=findViewById(R.id.analy);
+            mat=findViewById(R.id.mat);
+
+
+
+
+
 
 
             btnconnect.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +98,7 @@ public class Main5Activity extends AppCompatActivity {
                 public void onClick(View view) {
                     try {
 
-                        closeBT();
+                        data();
 
                     } catch (Exception ex) {
                         ex.printStackTrace();
@@ -97,16 +106,48 @@ public class Main5Activity extends AppCompatActivity {
                     }
                 }
 
+
             });
 
+            btnAjouter.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            try {
 
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+                Ajouter();
+
+
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         }
-    }
 
+        });
+
+
+
+            public void Ajouter() {
+                PatientModel patientmodel;
+            }
+         try {
+
+             PatientModel patientmodel = new PatientModel(name.getText().toString(), Integer.parseInt(mat).getText().toString(), prename.getText().toString(), serv.getText().toString(), analy.getText().toString());
+
+
+
+         } catch (NullPointerException e) {
+             e.printStackTrace();
+
+         } catch (Exception ex) {
+             ex.printStackTrace();
+
+         }
+                DataBaseHelper databasehelper = new DataBaseHelper(Main5Activity.this);
+                boolean b = databasehelper.addOne(patientmodel);
+
+
+
+            }
 
     //fin bluetooth device******************************************
     @SuppressLint("Assert")

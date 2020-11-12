@@ -8,59 +8,104 @@
     tools:context=".Main5Activity"
     tools:ignore="ExtraText">
 
-    <EditText
-        android:id="@+id/text"
-        android:layout_width="111dp"
-        android:layout_height="108dp" />
-
 
     <EditText
-        android:id="@+id/box"
-        android:layout_width="88dp"
-        android:layout_height="79dp"
-        android:layout_above="@+id/text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-79dp" />
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="NOM" />
 
+    <EditText
+        android:id="@+id/prename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_marginBottom="-91dp"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:text="Prenom" />
 
+    <EditText
+        android:id="@+id/mat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prename"
+        android:layout_marginBottom="-101dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Matricule" />
 
+    <EditText
+        android:id="@+id/serv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mat"
+        android:layout_marginBottom="-122dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Service" />
+
+    <EditText
+        android:id="@+id/analy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/serv"
+        android:layout_marginBottom="-124dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Type Analyse" />
 
 
     <Button
         android:id="@+id/button6"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/box"
-        android:layout_marginBottom="-174dp"
+        android:layout_above="@+id/analy"
+        android:layout_marginBottom="-152dp"
         android:background="@drawable/rounded_button"
         android:text="@string/imprimer"
         android:textColor="#00A695"
         android:textSize="23sp"
         android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="-165dp"
-            android:background="@drawable/rounded_button"
-            android:text="@string/connecter"
-            android:textColor="#00A695"
-            android:layout_above="@+id/button6"
-            android:textSize="23sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6"
+        android:layout_marginBottom="-180dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/connecter"
+        android:textColor="#00A695"
+        android:textSize="23sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button7"
-        android:layout_marginBottom="-190dp"
+        android:layout_marginBottom="-144dp"
         android:background="@drawable/rounded_button"
         android:text="@string/déconnecter"
         android:textColor="#00A695"
         android:textSize="23sp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button8"
+        android:layout_marginBottom="-150dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/Ajouter"
+        android:textColor="#00A695"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
 
 
 </RelativeLayout>
